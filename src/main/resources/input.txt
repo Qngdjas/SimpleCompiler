@@ -1,0 +1,28 @@
+program my_compiler;
+var
+    a, b, c: integer;
+    name: string;
+begin
+    a := 1;
+    b := 5;
+    c := 0;
+    while (a < b) do
+      begin
+        c := c * 10 + a;
+        a := a + 1;
+      end;
+    if c = 0 then
+      begin
+        name := 'Buddy!';
+      end;
+    if (b > c) then
+      begin
+        name := 'Guy!';
+      end
+    else
+      begin
+        name := 'World!';
+      end;
+    message := 'Hello, ' + name;
+    writeln(message);
+end.
